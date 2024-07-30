@@ -4,7 +4,7 @@ import removeIcon from '@/components/icons/removeIcon.vue'
 import completedIcon from '@/components/icons/completedIcon.vue'
 
 import { useTodoStore } from '@/stores/useTodoStore.js'
-const store = useTodoStore()
+const store = useTodoStore() //creation of store
 
 function editOnSubmit(todo) {
   store.modifyToDo(todo.id)
@@ -16,9 +16,8 @@ function handleEditing(todo) {
 
 <template>
   <div>
-    <!-- <p>Active Todos</p> -->
-
     <TransitionGroup name="list" tag="ul">
+      <!-- for loop to loop through todos -->
       <li :class="todo.completed ? 'isCompleted' : ''" v-for="todo in store.todos" :key="todo.id">
         <span name="addCheck" class="iconWrap" @click="store.isCompleted(todo.id)">
           <Transition name="addCheck">
@@ -44,6 +43,7 @@ function handleEditing(todo) {
   </div>
 </template>
 
+<!-- Css styling for component -->
 <style scoped>
 .list-enter-active,
 .list-leave-active {

@@ -3,6 +3,8 @@ import { useTodoStore } from '@/stores/useTodoStore.js'
 const store = useTodoStore()
 
 function onSubmit() {
+  //func to handle form submission
+
   const todo = document.getElementById('todo').value
 
   store.addToDo(todo)
@@ -21,6 +23,7 @@ function onSubmit() {
   </div>
 </template>
 
+<!-- Css styling for component -->
 <style scoped>
 .form-wrap {
   display: flex;

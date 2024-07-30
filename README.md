@@ -1,14 +1,12 @@
-#  VueTodo
+# Vue 3 Todo App
 
-This template should help get you started developing with Vue 3 in Vite.
+## Description
 
-## Recommended IDE Setup
+This code was completed **without** use of any AI, althouh I understand in real world development AI would be used to speed up the process and make development more effiecent sometimes
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## My Approach
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+The idea was to create a todo app using Pinia (Vue 3's state management library, Vuex is outdated now) and simple Vue Router. Also I wanted to make some soft animations for adding / removing and modyfing todos. I also wanted to make it look nice and clean.
 
 ## Project Setup
 
